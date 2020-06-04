@@ -33,9 +33,10 @@ steps:
 - task: sfpwowerscript-triggerapextest-task@6
   inputs:
     target_org: 'AzureDevOpsScratchOrg'
-    testlevel: 'RunLocalTests'
+    testlevel: 'RunAllTestsInOrg'
     wait_time: '60'
     isTelemetryEnabled: true
+
 
 - task: sfpwowerscript-validateapextestcoverage-task@3
   inputs:
