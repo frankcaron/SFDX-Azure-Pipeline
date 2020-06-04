@@ -8,15 +8,14 @@ steps:
 - task: sfpwowerscript-installsfdx-task@5
   displayName: Install SFDX
 
-- task: sfpwowerscript-authenticateorg-task@7
-  displayName: Authenticate with DevHub
+
+- task: sfpwowerscript-authenticateorg-task@8
   inputs:
-    method: JWT
-    jwt_key_file: server.key
-    username: $(SalesforceUsername)
-    alias: DevHub
+    method: 'Credentials'
+    username: '$(SalesforceUsername)'
+    password: '$(SalesforcePassword)'
+    alias: '$(SalesforceOrgAlias)'
     isdevhub: true
-    clientid: $(SalesforceClientId)
     isTelemetryEnabled: true
 
 - task: sfpwowerscript-authenticateorg-task@7
