@@ -14,14 +14,23 @@ This implementation has been based on the great work done by [Stafford Williams]
 6. Make sure your pipeline has the variables `SalesforceUsername`, `SalesforcePassword`, and `SalesforceSecurityToken` defined for it.
 7. Run the pipeline.
 
+# What It Does
+
+This pipeline is set up to do the following whenever the master branch of the repo is updated:
+
+1. Authenticate with an org
+2. Push source from the master branch of the repo to the org
+3. Run tests and validate
+4. Clean up
+
 # Salesforce 101
 
 Oh, and if you're not familiar with the whole Security Token thing, you can retrieve your Token from the user profile page of your user in the Salesforce org. Alternatively, you can turn off IP protections on the Salesforce side to allow all kinds of willy-nilly madness, but why would you do that?
 
 # To Do
 
-There's a few oustanding to-dos:
-- Turn repo into a template
+- Create a multi-stage pipeline that includes a sandbox environment
+- Run tests in sandbox prior to prod deploy
 
 # Warranties et al.
 
