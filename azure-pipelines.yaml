@@ -20,15 +20,6 @@ steps:
     isdevhub: true
     isTelemetryEnabled: true
 
-- task: sfpwowerscript-authenticateorg-task@8
-  inputs:
-    method: 'Credentials'
-    securitytoken: 'asd'
-    alias: 
-    isdevhub: false
-    isTelemetryEnabled: true
-
-
 - task: sfpowerscript-deploysourcetoorg-task@7
   inputs:
     target_org: 'AzureDevOpsScratchOrg'
