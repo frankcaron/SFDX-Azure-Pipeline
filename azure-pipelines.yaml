@@ -25,17 +25,19 @@ steps:
     target_org: 'AzureDevOpsScratchOrg'
     project_directory: './'
     source_directory: 'force-app'
-    checkonly: true
+    checkonly: false
     wait_time: '20'
     testlevel: 'NoTestRun'
     isToBreakBuildIfEmpty: true
     isTelemetryEnabled: true
+
 - task: sfpwowerscript-triggerapextest-task@6
   inputs:
     target_org: 'AzureDevOpsScratchOrg'
-    testlevel: 'RunLocalTests'
+    testlevel: 'RunAllTestsInOrg'
     wait_time: '60'
     isTelemetryEnabled: true
+
 
 - task: sfpwowerscript-validateapextestcoverage-task@3
   inputs:
