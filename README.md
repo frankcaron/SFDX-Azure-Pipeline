@@ -12,8 +12,11 @@ This implementation has been based on the great work done by [Stafford Williams]
 4. Connect to your forked repo, and when choosing the project type, point to the yaml file inside
 5. Edit the pipeline config inside AzureDevOps and ensure that the tasks you're using are properly aligned
 6. Make sure your pipeline has the variables `SalesforceUsername`, `SalesforcePassword`, and `SalesforceSecurityToken` defined for it.
+7. Run the pipeline.
 
-You can retrieve your security token from the user profile page of your user in the Salesforce org. Alternatively, you can turn off IP protections on the Salesforce side to allow all kinds of willy-nilly madness, but why would you do that?
+# Salesforce 101
+
+Oh, and if you're not familiar with the whole Security Token thing, you can retrieve your Token from the user profile page of your user in the Salesforce org. Alternatively, you can turn off IP protections on the Salesforce side to allow all kinds of willy-nilly madness, but why would you do that?
 
 # To Do
 
