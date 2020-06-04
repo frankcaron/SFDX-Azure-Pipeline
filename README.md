@@ -13,9 +13,10 @@ This implementation has been based on the great work done by [Stafford Williams]
 2. Install [SF Power Scripts extension](https://marketplace.visualstudio.com/items?itemName=AzlamSalam.sfpowerscripts&ssr=false#review-details) into your Azure DevOps instance.
 3. Build a new pipeline in Azure DevOps 
 4. Connect to your forked repo, and when choosing the project type, point to the yaml file inside
-5. Edit the pipeline config inside AzureDevOps and ensure that the tasks you're using are properly aligned
-6. Make sure your pipeline has the variables `SalesforceUsername`, `SalesforcePassword`, and `SalesforceSecurityToken` defined for it.
-7. Run the pipeline.
+5. Edit the pipeline config and ensure that the tasks you're using are properly aligned
+  6. Make sure your pipeline has the variables `SalesforceUsername`, `SalesforcePassword`, and `SalesforceSecurityToken` defined for it.
+  7. Ensure that the versions and attributes for each task align with whatever updates have happened on the extension's task APIs.
+8. Run the pipeline.
 
 # What It Does
 
