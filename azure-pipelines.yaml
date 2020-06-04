@@ -23,7 +23,7 @@ steps:
 - task: sfpowerscript-deploysourcetoorg-task@7
   inputs:
     target_org: 'AzureDevOpsScratchOrg'
-    project_directory: 'src'
+    project_directory: './'
     source_directory: 'force-app'
     checkonly: true
     wait_time: '20'
