@@ -5,10 +5,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: sfpwowerscript-installsfdx-task@5
+- task: sfpwowerscript-installsfdx-task
   displayName: Install SFDX
 
-- task: sfpwowerscript-authenticateorg-task@7
+- task: sfpwowerscript-authenticateorg-task
   displayName: Authenticate with DevHub
   inputs:
     method: JWT
@@ -19,7 +19,7 @@ steps:
     clientid: $(SalesforceClientId)
     isTelemetryEnabled: true
 
-- task: sfpwowerscript-authenticateorg-task@7
+- task: sfpwowerscript-authenticateorg-task
   displayName: Authenticate with ScratchOrg
   inputs:
     method: JWT
@@ -30,7 +30,7 @@ steps:
     clientid: $(SalesforceClientId)
     isTelemetryEnabled: true
 
-- task: sfpowerscript-deploysourcetoorg-task@5
+- task: sfpowerscript-deploysourcetoorg-task
   displayName: Deploy source to scratch org
   inputs:
     project_directory: src
@@ -41,7 +41,7 @@ steps:
     testlevel: 'NoTestRun'
     isTelemetryEnabled: true
 
-- task: sfpwowerscript-triggerapextest-task@3
+- task: sfpwowerscript-triggerapextest-task
   displayName: Run Apex Unit Tests
   inputs:
     target_org: 'MyScratchOrg'
@@ -50,7 +50,7 @@ steps:
     synchronous: false
     isTelemetryEnabled: true
 
-- task: sfpwowerscript-validateapextestcoverage-task@2
+- task: sfpwowerscript-validateapextestcoverage-task
   displayName: Validate 90% Apex Test Code Coverage
   inputs:
     target_org: 'MyScratchOrg'
