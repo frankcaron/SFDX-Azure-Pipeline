@@ -1,7 +1,9 @@
 <template>
-    <lightning-card  title="Hello world!">
+    <lightning-card  title="Hello World!">
         <lightning-button label="New" slot="actions"></lightning-button>
-        <p class="slds-var-p-horizontal_small">Whatcha knowin'? I've come to watch your power flowin'.</p>
+        <template if:true={valueToDisplay}>
+            <p class="slds-var-p-horizontal_small">{valueToDisplay}</p>
+        </template>
         <p slot="footer">- Mr. Burns</p>
     </lightning-card>
 </template>

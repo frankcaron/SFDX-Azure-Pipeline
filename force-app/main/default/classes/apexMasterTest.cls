@@ -5,6 +5,6 @@ public with sharing class apexMasterTest {
     static void apexMasterTest() {
 
         apexMaster test = new apexMaster();
-        System.assertEquals( test.helloWorld() , 'Hello World' );
+        System.assertEquals( apexMaster.getHelloWorld() , 'Hello world, Azure DevOps is in the house!' );
     }
 }
