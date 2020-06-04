@@ -3,6 +3,8 @@ public with sharing class apexMasterTest {
 
     @istest 
     static void apexMasterTest() {
-        System.assertEquals( apexMaster.helloWorld() , 'Hello World' );
+
+        apexMaster test = new apexMaster();
+        System.assertEquals( test.helloWorld() , 'Hello World' );
     }
 }
