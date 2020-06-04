@@ -1,4 +1,7 @@
-# Salesforce Azure Dev Ops Demo
+![Status](https://img.shields.io/badge/status-Beta-yellowgreen)
+
+<h1 align="center">Salesforce Azure Dev Ops Demo</h1>
+<p align="center"><strong>Laying A Pipeline For The Future</strong></p>
 
 The following repository contains sample code and configuration to run a full end-to-end Salesforce release pipeline using Azure Dev Ops.
 
