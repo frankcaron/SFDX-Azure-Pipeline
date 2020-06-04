@@ -15,8 +15,17 @@ steps:
     method: 'Credentials'
     username: '$(SalesforceUsername)'
     password: '$(SalesforcePassword)'
+    securitytoken: '$(SalesforceSecurityToken)'
     alias: 'AzureDevOpsScratchOrg'
     isdevhub: true
+    isTelemetryEnabled: true
+
+- task: sfpwowerscript-authenticateorg-task@8
+  inputs:
+    method: 'Credentials'
+    securitytoken: 'asd'
+    alias: 
+    isdevhub: false
     isTelemetryEnabled: true
 
 
