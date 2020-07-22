@@ -5,7 +5,7 @@
 
 The following repository contains sample code and configuration to run a full end-to-end Salesforce release pipeline using Azure Dev Ops.
 
-This implementation has been based on the great work done by [Stafford Williams](https://staffordwilliams.com/blog/2020/04/01/a-salesforce-pipeline-in-azure-devops-copy/) in his public blog post. This particular implementation relies heavily on [SF Power Scripts](https://sfpowerscripts.com/gettingstarted/), which is handy SFDX cli wrapper specifically attuned to Azure DevOps' lingo.
+This implementation has been based on the great work done by [Stafford Williams](https://staffordwilliams.com/blog/2020/04/01/a-salesforce-pipeline-in-azure-devops-copy/) in his public blog post. This particular implementation relies heavily on [SF Power Scripts](https://sfpowerscripts.com/gettingstarted/), which is handy SFDX cli wrapper specifically attuned to Azure DevOps' lingo. Right!
 
 # Set Up
 
